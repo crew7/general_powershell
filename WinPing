@@ -1,0 +1,6 @@
+function WinPing {
+	param (
+     	   [string]$IPAddress
+    	)
+	Test-NetConnection -Port 135 -InformationLevel Quiet $IPAddress
+}
